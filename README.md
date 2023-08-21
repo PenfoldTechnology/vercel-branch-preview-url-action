@@ -2,6 +2,8 @@
 
 > Generate the branch preview URL for a Vercel deployment
 
+Useful if you want to know the branch preview URL ahead of a Vercel deployment being completed.
+
 ## Inputs
 
 - `vercel-team-id`: your Vercel team ID

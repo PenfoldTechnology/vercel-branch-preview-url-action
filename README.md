@@ -22,9 +22,9 @@ jobs:
         id: branch-preview-url
         uses: PenfoldTechnology/vercel-branch-preview-url-action@v1
         with:
-          git-branch-name: dev/my-fancy-branch
+          git-branch-name: ${{ github.head_ref || github.ref_name }}
           vercel-project-name: fancy-project
-          vercel-team-id: AmVgp02LOoip4LJ7yuaftMeNXXb4BDowFcfTVS6qX8yuBp
+          vercel-team-id: fancy-team
       - name: Print URL
         run: echo "${{ steps.branch-preview-url.outputs.url }}"
 ```

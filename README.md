@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Generate branch preview URL
         id: branch-preview-url
-        uses: PenfoldTechnology/vercel-branch-preview-url-action@v1
+        uses: PenfoldTechnology/vercel-branch-preview-url-action@v1.0.0
         with:
           git-branch-name: ${{ github.head_ref || github.ref_name }}
           vercel-project-name: fancy-project

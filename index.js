@@ -63,7 +63,7 @@ function generateBranchPreviewURL(teamId, projectName, branchName) {
     core.setOutput("url", "https://" + truncatedUrl);
 }
 
-// eg. `node ./github/scripts/generate_branch_preview_url.js $team $project $branch`
+// eg. `node index.js $team $project $branch`
 if (process.argv.length === 5) {
     generateBranchPreviewURL(process.argv[2], process.argv[3], process.argv[4]);
 } else {

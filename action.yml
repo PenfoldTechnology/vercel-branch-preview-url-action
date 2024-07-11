@@ -1,18 +1,18 @@
-name: 'Generate Vercel Branch Preview URL'
+name: Generate Vercel Branch Preview URL
 description: Generate the branch preview URL for a Vercel deployment
 branding:
-  icon: 'link'
-  color: 'purple'
+  icon: link
+  color: purple
 inputs:
   vercel-team-id:
-    description: 'Vercel team ID'
+    description: Vercel team ID
     required: true
   vercel-project-name:
-    description: 'Vercel project name'
+    description: Vercel project name
     required: true
   git-branch-name:
-    description: 'Branch name'
+    description: Branch name
     required: true
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: node20
+  main: index.js
